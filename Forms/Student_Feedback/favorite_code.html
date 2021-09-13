@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <!--title is shown in web link with this name.-->
-    <title>Favorite Project</title> 
+    <title>Favorite Code</title> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Urbanist:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fav_code-style.css" type="text/css">
 </head>
 <body class="m-3">
@@ -19,22 +19,36 @@
     <div class="md-4"> <!--start of first column-->
         <div class="mx-5">
         <p>As one of my projects I really enjoyed this coin calculator.</p>
-        <link href="C:\Users\JSBX\Pictures\Camera Roll\SQL Class\coinCalculartor">coin calculator</p>
+        <img src="coinCalculator.jpg" alt="coinCalculator" title="Coin Collector" height="250">  
         </div>
     </div> <!--end of first column-->
 
     <div class="md-4"> <!--start of second column-->
-        <p>here is a link to see my code in github its a public link: </p>
-        <a href="https://github.com/Hockeydan25/VisualC--class">Visit my github Repository</a>
-                
+        <p>Here is a link to see my code in github its a public link: </p>
+        <a href="https://github.com/Hockeydan25/VisualC--class" class="one">Visit my github Repository</a>
+        <pre><code> <!--start of code insert space is limited or kept -->
+        private void btnCalculate_Click(object sender, EventArgs e) //button click/enter starts calculations.
+        {
+            int rchange = Convert.ToInt16(txtboxAC.Text); //converting string number to decimal 
+
+            quarters = rchange / 25; //division = into quarters, remainder moves on to nxt calculation 
+                rchange = rchange % 25; //remainder divisible 25 not moves on   
+            dimes = rchange / 10;       //division equation = into dimes,calculation 
+                rchange = rchange % 10; //remainder divisible 10 not moves on  
+            nickles = rchange / 5;      //division equation = into nickles,calculation 
+                rchange = rchange % 5;  //remainder divisible 5 not moves on  
+            pennies = rchange / 1; //division equation = into pennies,calculation should at 0 nxt.
+                rchange = rchange % 1;  //remainder divisible 0 equations completed 
+
+            txtboxQ.Text = quarters.ToString(""); //converting intger to string "n" for number.
+            txtboxD.Text = dimes.ToString("");   //converting intger to string "n" for number.
+            txtboxN.Text = nickles.ToString(""); //converting intger to string "n" for number.
+            txtboxP.Text = pennies.ToString(""); //converting intger to string "n" for number.
+           
+        }  </code></pre>   <!--ending code insert-->
     </div>
-        
-
-
-     </form><!--end of form-->
     
-    </div> <!--end of second column-->    
-
+    
 </div> <!--end of row-->
 
 </body>
