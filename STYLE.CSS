@@ -1,4 +1,21 @@
 h1{
-    background-color: antiquewhite;
-    font-size: x-small;
+    font-size: x-large;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+#real-alert {
+    color:  orangered;
+    border-bottom: 5px solid red;
+}
+
+#test-only {
+    color: deepskyblue;
+    border-bottom: 4px dotted blue;
+
+}
+
+.missile-link{
+    display:block;
 }
