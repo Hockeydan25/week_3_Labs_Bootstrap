@@ -1,0 +1,24 @@
+.jumbotron{
+    background-color: rgb(149, 115, 115);
+    color: rgb(44, 25, 22);
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.md-7{
+    background-color: wheat;
+    font-family: 'Quicksand', sans-serif;
+}
+.md-4{
+    background-color: rgb(190, 100, 118);
+    columns: black;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.md-3 {
+    background-color: rgb(231, 207, 145);
+    border-color: darkolivegreen;
+    border-style: dashed;
+}
+body{
+    background-color: cornsilk;
+}
