@@ -14,70 +14,70 @@
     <h1>Welcome: Please enjoy the Confrence today!</h1>
 </div>    
 
-<div class="row"> <!--start of row-->
     
-    <div class="md-7"> <!--start of first column-->
-        
+<div class="row"> <!--start of first row-->
+    <div class="col-md=12">    
         <div class="mx-5">
-            <p>Welcome to the Conference!</p>
+            <p>Welcome to the Conference!</p> <!--paragraph-->
             <p>Please fill out the form below before heading into the room.</p>
             <p>Keep your password short, we have little restrictions but is 
             required, please include your contact information(email) if you want to attented next year.</p>
         </div>
     </div> <!--end of first colmn-->
-
-    <div class="md-4"> <!--second column-->
+</div> <!--end first row-->
+<div class="row"> <!--start of second row-->
+    <div class="col-md-3"> <!--second column-->
      <form class="mx-5"> 
         <div>
             <label for="name">Name: First and Last:</label>
-            <input id="name"  class="form-control" required type="text" maxlength="70">
+            <input id="name"  class="form-control" required type="name" maxlength="70">
         </div>
 
         <div>
             <label for="email">Email Address:</label>
-            <input id="email" class="form-control" required type="text" maxlength="70">
+            <input id="email" class="form-control" required type="email" maxlength="70">
         </div>
     
         <div>
             <label for="Password">Password:</label>
-            <input id="Password" class="form-control" required type="text" maxlength="26">
+            <input id="Password" class="form-control" required type="password" maxlength="26">
             <br>
         </div>
-     </form>    
+        
     </div><!--end second column-->
 
-    <div class="md-4"><!--third column-->
+    <div class="col-md-3"><!--third column-->
 
          <label class="form-text">Want to receive an email for next years event? </labels>
-         <div class="form-check">
+         <div>
             <input class="form-check-label" id="Yes" name="current-student" type="radio">
             <label for="yes" class="form-check-label" >Y</label> 
          </div>
          
-         <div class="form-check">
+         <div>
             <input class="form-check-label" id="no" name="current-student" type="radio">
             <label for="No" class="form-check-label">N</label> 
-         </div>
-         
-         <br>
-    
+         </div>        
+
+         <br>    
+
         <div>
             <label for="date">Date</label>
             <input id="date" class="form-control" required type="date" maxlength="70">
         </div>
     </div><!--end of third column-->
 
-    <div class="md-3"><!--end of fourth column-->
+    <div class="col-md-3"><!--start of fourth column. size medium 3 of 12.-->
         <label class="form-text">Select T-shirt Size</labels>
-        <div class="form-check">
+        <div>
             <input class="form-check-label" id="Small" name="current-student" type="radio">
-            <label for="Small" class="form-check-label" >Small</label> 
+            <label for="Small" class="form-check-label" >Small</label>
         </div>
-        <div class="form-check">
+        <div>
             <input class="form-check-label" id="Medium" name="current-student" type="radio">
             <label for="Medium" class="form-check-label">Medium</label> 
         </div>
-        <div class="form-check">
+        <div>
             <input class="form-check-label" id="Large" name="current-student" type="radio">
             <label for="Large" class="form-check-label">Large</label> 
         </div>
@@ -85,10 +85,19 @@
         <div class="mx-5">
             <input class="btn btn-primary" type="submit" value="Submit" >
         </div>
+        
     </div> <!--end of forth column-->
+    <div class="col-md-3"><!--start of fith column. size medium 3 of 12.-->
+        <div>
+
+            <label for="comments"></label>Comments:</label>
+            <br>
+            <textarea id="comments" type="comments" rows="7" cols="70" class="form-control"></textarea><br>
+        </DIV>    
+    </div>   
+     </form>
      
     
-
 </div> <!--end of row-->
 
 </body><!--end of Body-->
